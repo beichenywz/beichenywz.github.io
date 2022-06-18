@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/cloud/css/style.css" />
+        <link rel="icon" href="assets/cloud/images/icon.png" />
+        <script src="assets/cloud/js/JavaScript .js"></script>
+        <title>cloud</title>
+    </head>
+    <body>
+        <div class="root">
+            <input type="checkbox" id="sidemenu" />
+            <aside>
+                <h3>侧边栏</h3>
+                <h6>各下载源特点</h6>
+                <div>
+                    <table id="tips">
+                        <tr>
+                            <th>下载源</th>
+                            <th>速度</th>
+                            <th>备注</th>
+                        </tr>
+                        <tr>
+                            <td>蓝奏云</td>
+                            <td>快</td>
+                            <td>大小不超过100M<br />文件格式有限制</td>
+                        </tr>
+                        <tr>
+                            <td>腾讯微云</td>
+                            <td>慢</td>
+                            <td>速度慢但网站稳定</td>
+                        </tr>
+                        <tr>
+                            <td>奶牛快传</td>
+                            <td>快</td>
+                            <td>推荐使用</td>
+                        </tr>
+                        <tr>
+                            <td>123网盘</td>
+                            <td>较慢</td>
+                            <td>备用</td>
+                        </tr>
+                        <tr>
+                            <td>分秒帧</td>
+                            <td>快</td>
+                            <td>界面较丑</td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+            <main>
+                <div class="file">
+                    <button id="open_btn1" class="open_btn">
+                        <img
+                            class="image"
+                            src="assets/cloud/images/file.png"
+                            alt="文件"
+                        />
+                        <p class="filename">学号抽取.msi</p>
+                    </button>
+                </div>
+                <div class="file">
+                    <button id="open_btn2" class="open_btn">
+                        <img
+                            class="image"
+                            src="assets/cloud/images/file.png"
+                            alt="文件"
+                        />
+                        <p class="filename">program killer.zip</p>
+                    </button>
+                </div>
+                <div class="file">
+                    <button id="open_btn3" class="open_btn">
+                        <img
+                            class="image"
+                            src="assets/cloud/images/file.png"
+                            alt="文件"
+                        />
+                        <p class="filename">Visual Studio Code.zip</p>
+                    </button>
+                </div>
+                <div class="file">
+                    <button id="open_btn4" class="open_btn">
+                        <img
+                            class="image"
+                            src="assets/cloud/images/file.png"
+                            alt="文件"
+                        />
+                        <p class="filename">Visual Studio 2019.zip</p>
+                    </button>
+                </div>
+            </main>
+            <div id="side">
+                <label id="label1" for="sidemenu"><strong>≡</strong></label>
+            </div>
+            <div id="background1" class="background">
+                <div id="pop">
+                    <form id="form1">
+                        <p id="form_title">下载文件</p>
+                        <p id="close_btn1" class="close_btn">×</p>
+                        <div id="form_file">
+                            <img
+                                class="image"
+                                src="assets/cloud/images/file.png"
+                                alt="文件"
+                            />
+                            <p id="form_filename">文件名</p>
+                        </div>
+                        <h4 id="form_text">选择下载源</h4>
+                        <select id="form_select1" class="form_select">
+                            <option selected="selected">请选择</option>
+                            <option
+                                value="https://wwn.lanzout.com/izPAD05wrl2d"
+                            >
+                                蓝奏云
+                            </option>
+                            <option value="https://share.weiyun.com/BS9Gzu0a">
+                                腾讯微云
+                            </option>
+                            <option
+                                value="https://cowtransfer.com/s/e377fe1c2f1949"
+                            >
+                                奶牛快传
+                            </option>
+                            <option
+                                value="https://www.123pan.com/s/gx6DVv-rNOwd"
+                            >
+                                123网盘
+                            </option>
+                            <option value="https://mdl.ink/rhZYc4">
+                                分秒帧
+                            </option>
+                        </select>
+                        <input
+                            type="button"
+                            id="form_download"
+                            value="下载"
+                            onclick="GoToUrl1()"
+                        />
+                    </form>
+                </div>
+            </div>
+            <div id="background2" class="background">
+                <div id="pop">
+                    <form id="form1">
+                        <p id="form_title">下载文件</p>
+                        <p id="close_btn2" class="close_btn">×</p>
+                        <div id="form_file">
+                            <img
+                                class="image"
+                                src="assets/cloud/images/file.png"
+                                alt="文件"
+                            />
+                            <p id="form_filename">文件名</p>
+                        </div>
+                        <h4 id="form_text">选择下载源</h4>
+                        <select id="form_select2" class="form_select">
+                            <option selected="selected">请选择</option>
+                            <option
+                                value="https://wwn.lanzout.com/iJZ2105wrr2j"
+                            >
+                                蓝奏云
+                            </option>
+                            <option value="https://share.weiyun.com/L0nKCgrI">
+                                腾讯微云
+                            </option>
+                            <option
+                                value="https://cowtransfer.com/s/8ed77e62ca5845"
+                            >
+                                奶牛快传
+                            </option>
+                            <option
+                                value="https://www.123pan.com/s/gx6DVv-8NOwd"
+                            >
+                                123网盘
+                            </option>
+                            <option value="https://mdl.ink/VnTWUr">
+                                分秒帧
+                            </option>
+                        </select>
+                        <input
+                            type="button"
+                            id="form_download"
+                            value="下载"
+                            onclick="GoToUrl2()"
+                        />
+                    </form>
+                </div>
+            </div>
+            <div id="background3" class="background">
+                <div id="pop">
+                    <form id="form1">
+                        <p id="form_title">下载文件</p>
+                        <p id="close_btn3" class="close_btn">×</p>
+                        <div id="form_file">
+                            <img
+                                class="image"
+                                src="assets/cloud/images/file.png"
+                                alt="文件"
+                            />
+                            <p id="form_filename">文件名</p>
+                        </div>
+                        <h4 id="form_text">选择下载源</h4>
+                        <select id="form_select3" class="form_select">
+                            <option selected="selected">请选择</option>
+                            <option
+                                value="https://wwn.lanzout.com/iop8Q05wrqzg"
+                            >
+                                蓝奏云
+                            </option>
+                            <option value="https://share.weiyun.com/gyqZFngd">
+                                腾讯微云
+                            </option>
+                            <option
+                                value="https://cowtransfer.com/s/255993151a284a"
+                            >
+                                奶牛快传
+                            </option>
+                            <option
+                                value="https://www.123pan.com/s/gx6DVv-0NOwd"
+                            >
+                                123网盘
+                            </option>
+                            <option value="https://mdl.ink/PDhfJu">
+                                分秒帧
+                            </option>
+                        </select>
+                        <input
+                            type="button"
+                            id="form_download"
+                            value="下载"
+                            onclick="GoToUrl3()"
+                        />
+                    </form>
+                </div>
+            </div>
+            <div id="background4" class="background">
+                <div id="pop">
+                    <form id="form1">
+                        <p id="form_title">下载文件</p>
+                        <p id="close_btn4" class="close_btn">×</p>
+                        <div id="form_file">
+                            <img
+                                class="image"
+                                src="assets/cloud/images/file.png"
+                                alt="文件"
+                            />
+                            <p id="form_filename">文件名</p>
+                        </div>
+                        <h4 id="form_text">选择下载源</h4>
+                        <select id="form_select4" class="form_select">
+                            <option selected="selected">请选择</option>
+                            <option
+                                value="https://wwn.lanzout.com/inHQc05wrp4j"
+                            >
+                                蓝奏云
+                            </option>
+                            <option value="https://share.weiyun.com/SJXO9c8l">
+                                腾讯微云
+                            </option>
+                            <option
+                                value="https://cowtransfer.com/s/47d70a43820846"
+                            >
+                                奶牛快传
+                            </option>
+                            <option
+                                value="https://www.123pan.com/s/gx6DVv-KNOwd"
+                            >
+                                123网盘
+                            </option>
+                            <option value="https://mdl.ink/UYzIA1">
+                                分秒帧
+                            </option>
+                        </select>
+                        <input
+                            type="button"
+                            id="form_download"
+                            value="下载"
+                            onclick="GoToUrl4()"
+                        />
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <p>Copyright © 2022 beichen</p>
+            </footer>
+        </div>
+        <script src="assets/cloud/js/pop.js"></script>
+    </body>
+</html>
