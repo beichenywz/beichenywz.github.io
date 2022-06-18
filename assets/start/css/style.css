@@ -24,7 +24,8 @@ body {
     position: fixed;
     background-position: center;
     background-size: cover;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.65));
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.65));
+    backdrop-filter: blur(5px);
 }
 
 #time {
@@ -98,7 +99,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    width: 500px;
+    width: 560px;
     height: 500px;
     top: 65%;
     left: 50%;
@@ -108,18 +109,29 @@ body {
 #link {
     width: 100px;
     height: 120px;
+    margin: 20px;
 }
 
-#link-image {
+#link-imagebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     border-radius: 20px;
     background-color: #202020;
-    transition: 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-#link-image:hover {
-    background-color: #2c2c2c;
+#link-imagebox:hover {
+    background-color: #303030;
+}
+
+#link-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+
 }
 
 #link-name {
