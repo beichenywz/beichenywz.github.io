@@ -160,13 +160,14 @@ body {
     }
 
     #linkbox {
-        top: 70%;
+        top: 60%;
         width: 315px;
+        height: 360px;
     }
 
     .link {
         width: 75px;
-        height: 100px;
+        height: 90px;
         margin: 15px;
     }
 
