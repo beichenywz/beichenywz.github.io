@@ -55,8 +55,8 @@ body {
 
 #input-search {
     position: absolute;
-    width: 440px;
-    height: 45px;
+    width: 100%;
+    height: 100%;
     border: 0;
     padding-left: 30px;
     padding-right: 30px;
@@ -77,8 +77,8 @@ body {
     left: 50%;
     border-radius: 30px;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 45px;
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(20px);
 }
 
@@ -89,8 +89,8 @@ body {
     left: 50%;
     border-radius: 30px;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 45px;
+    width: 100%;
+    height: 100%;
     backdrop-filter: brightness(60%);
 }
 
@@ -106,13 +106,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#link {
+.link {
     width: 100px;
     height: 120px;
     margin: 20px;
 }
 
-#link-imagebox{
+.link-imagebox{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,18 +123,18 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-#link-imagebox:hover {
+.link-imagebox:hover {
     background-color: #303030;
 }
 
-#link-image {
-    width: 75px;
-    height: 75px;
-    border-radius: 20px;
+.link-image {
+    width: 75%;
+    height: 75%;
+    border-radius: 20%;
 
 }
 
-#link-name {
+.link-name {
     color: #ffffff;
     text-align: center;
     margin: 5px;
@@ -148,4 +148,35 @@ body {
     color: #adadad;
     text-align: center;
     margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #time {
+        top: 12%;
+    }
+
+    #searchbox {
+        top: 25%;
+        width: 270px;
+    }
+
+    #linkbox {
+        top: 70%;
+        width: 315px;
+    }
+
+    .link {
+        width: 75px;
+        height: 100px;
+        margin: 15px;
+    }
+
+    .link-imagebox {
+        width: 75px;
+        height: 75px;
+    }
+
+    #footerbox {
+        font-size: 15px;
+    }
 }
