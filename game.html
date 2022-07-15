@@ -42,13 +42,6 @@
         </div>
     </body>
     <script>
-
-
-
-
-
-
-
         var size = 800,
             Score = 0,
             snake = [41, 40], //snake队列表示蛇身，初始节点存在但不显示
@@ -117,7 +110,7 @@
         // eslint-disable-next-line no-debugger
         let options = {
             mode: "dynamic", // 'dynamic', 'static' or 'semi'
-            size: 150,
+            size: 300,
             zone: joyCon, //如果不提提供zone容器元素，那么默认动态生成的元素是注入在body中的。
             color: "#00b3fa",
             threshold: 0.4,
@@ -147,12 +140,7 @@
                     default:
                         break;
                 }
-
-            //         direction = snake[1] - snake[0] ==
-            // (n = [-1, -40, 1, 40][(evt || event).keyCode - 37] || direction)
-            // ? direction : n;
-            //         console.log(evt.type);
-                }
-            )
+            }
+        )
     </script>
 </html>
