@@ -141,29 +141,29 @@ body {
 
 @media only screen and (max-width: 768px) {
     #time {
-        top: 12%;
+        top: 10%;
     }
 
     #searchbox {
-        top: 25%;
-        width: 270px;
+        top: 23%;
+        width: 75%;
     }
 
     #linkbox {
         top: 60%;
-        width: 315px;
-        height: 360px;
+        width: 87vw;
+        height: 102vw;
     }
 
     .link {
-        width: 75px;
-        height: 90px;
-        margin: 15px;
+        width: 21vw;
+        height: 26vw;
+        margin: 4vw;
     }
 
     .link-imagebox {
-        width: 75px;
-        height: 75px;
+        width: 21vw;
+        height: 21vw;
     }
 
     #footerbox {
