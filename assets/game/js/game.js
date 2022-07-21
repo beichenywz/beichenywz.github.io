@@ -23,7 +23,7 @@ function replace() {
     prompt.style.display = "flex";
     prompt.innerHTML = "账号未登录,正在跳转,前往登录";
     setTimeout(() => {
-        window.location.replace("http://127.0.0.1:5500/login.html");
+        window.location.replace("https://beichenywz.github.io/login.html");
     }, 1000);
 }
 
