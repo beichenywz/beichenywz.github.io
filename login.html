@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/login/css/style.css">
+    <script src="assets/login/js/login.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <div id="bodybox">
+        <div id="containerbox">
+            <div id="controlbox">
+                <div class="control" id="signincontrol" onclick="signinctrl()">登录</div>
+                <div class="control" id="signupcontrol" onclick="signupctrl()">注册</div>
+            </div>
+            <div id="contentbox">
+                <div id="signincontent" class="content">
+                    <input id="signinuser" type="text" placeholder="账号" maxlength="20">
+                    <input id="signinpass" type="password" placeholder="密码" maxlength="20">
+                    <input class="button" type="button" id="signinbutton" value="登录" onclick="signin()">
+                </div>
+                <div id="signupcontent" class="content">
+                    <input id="signupuser" type="text" placeholder="账号" maxlength="20">
+                    <input id="signuppass" type="password" placeholder="密码" maxlength="20">
+                    <input id="signuprepass" type="password" placeholder="重复密码" maxlength="20">
+                    <input class="button" type="button" id="signupbutton" value="注册" onclick="signup()">
+                </div>
+            </div>
+            <div id="warning"></div>
+        </div>
+    </div>
+    <div id="prompt"><div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#bodybox {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerbox {
+    position: relative;
+    display: flex;
+    width: 250px;
+    padding: 40px;
+    flex-direction: column;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    background: inherit;
+}
+
+#containerbox::before {
+    content: "";
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    overflow: hidden;
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.45);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#controlbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.control {
+    padding: 7px 0;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    padding: 0 16px;
+    margin: 6px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.button {
+    margin: 20px 0;
+    background-color: rgba(17, 0, 78, 0.6);
+    color: white;
+}
+
+#warning {
+    color: rgb(202, 11, 11);
+    font-size: 1.1em;
+}
+
+#prompt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(17, 0, 78, 0.6);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#signincontrol {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(17, 0, 78, 0.6);
+}
+
+#signupcontrol {
+    background-color: rgba(17, 0, 78, 0.6);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#signupcontent {
+    display: none;
+}
