@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="assets/cloud/css/style.css" />
         <link rel="icon" href="assets/cloud/images/icon.png" />
         <script src="assets/cloud/js/JavaScript .js"></script>
+        <script src="assets/cloud/lib/vue.global.js"></script>
         <title>cloud</title>
     </head>
     <body>
@@ -51,15 +52,33 @@
                 </div>
             </aside>
             <main>
-                <div id="0" class="file">
-                    <button id="open_btn4" class="open_btn">
-                        <img
-                            class="image"
-                            src="assets/cloud/images/file.png"
-                            alt="文件"
-                        />
-                        <p class="filename">Visual Studio 2019.zip</p>
-                    </button>
+                <div id="app">
+                    <!-- <div id="0" class="file">
+                        <button id="open_btn4" class="open_btn">
+                            <img
+                                class="image"
+                                src="assets/cloud/images/file.png"
+                                alt="文件"
+                            />
+                            <p class="filename">Visual Studio 2019.zip</p>
+                        </button>
+                    </div> -->
+                    <ul>
+                        <li v-for="f in files">
+                            {{f.name}}--{{f.scr}}--{{a}}
+                        </li>
+                    </ul>
+                    
+                        <!-- <button id="open_btn4" class="open_btn">
+                            <img
+                                class="image"
+                                src="assets/cloud/images/file.png"
+                                alt="文件"
+                            />
+                            <p class="filename">{{name}}</p>
+                        </button> -->
+                        
+                    </div>
                 </div>
             </main>
             <div id="side">
@@ -116,6 +135,16 @@
                 <p>Copyright © 2022 beichen</p>
             </footer>
         </div>
-        
+        <script>
+            
+            new Vue({
+                el:"#app",
+                data:{
+                    files:[
+                        {id:"0",name:"a",src:"1"}
+                    ]
+                }
+            })
+        </script>
     </body>
 </html>
